@@ -7,7 +7,7 @@ import streamlit as st
 # We define three characters that take up physical space but are completely invisible.
 ZERO_CHAR = '\u2800'  # Braille Pattern Blank (Represents '0')
 ONE_CHAR = '\u3164'   # Hangul Filler (Represents '1')
-SPLIT_CHAR = ' ' # Halfwidth Hangul Filler (Separates letters)
+SPLIT_CHAR = '\u200d' # Halfwidth Hangul Filler (Separates letters)
 
 def text_to_invisible(text):
     """Converts normal text to a massive block of invisible 'Empty Box' characters."""
